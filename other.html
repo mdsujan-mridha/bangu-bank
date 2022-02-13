@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to bangu Bank </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header> 
+       <h1  class="text-5xl text-center my-16 font-semibold border-2 border-solid border-purple-500 text-slate-50 bg-stone-600" style="width: auto;height: 70px;" >  Welcome to bangu Bank Main page </h1>
+
+       </header>
+     <main> 
+         <section class="mt-16">
+             <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                 <div class="bg-teal-700 h-full p-16 rounded text-center">
+                     <h3 class="text-3xl"> Deposit Money </h3>
+                     <h3  class="text-5xl mt-1"> $<span id="deposit-money"> 000 </span> </h3>
+                 </div>
+
+                 <div class="bg-indigo-800 h-full p-16 rounded text-center">
+                    <h3 class="text-3xl"> Withdraw Money </h3>
+                    <h3 class="text-5xl mt-1"> $ <span id="withdraw-total"> 000 </span> </h3>
+                </div>
+                <div class="bg-violet-800 h-full p-16 rounded text-center">
+                    <h3 class="text-3xl"> Balance </h3>
+                    <h3 class="text-5xl mt-1"> $ <span id="total-balance"> 000 </span> </h3>
+                </div>
+             </div>
+         </section>
+         <section class="mt-8"> 
+            
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto text-white">
+                <div class="bg-green-500 h-full p-16 rounded text-center items-center">
+                    <h3 class="text-3xl"> How Much Money you want to Deposit </h3>
+                   <div> 
+                       <input id="deposit-input" class="rounded border-2 border-stone-800 border-red-400 h-2/4 mt-8 " style="background: transparent; height: 50px;" type="number ">
+                       <button id="deposit-btn" class="rounded-md border-2 border-stone-800 ml-8 text-slate-50 font-medium bg-purple-600 submit-btn " style="width: 100px;height: 50px;border: none;"> Deposit </button>
+                   </div>
+                </div>
+
+                <div class="bg-yellow-800 h-full p-16 rounded text-center items-center">
+                    <h3 class="text-3xl"> How Much Money you want to Deposit </h3>
+                   <div> 
+                       <input id="withdraw-input" class="rounded border-2 border-stone-800 border-red-400 h-2/4 mt-8 " style="background: transparent; height: 50px;" type="text">
+                       <button id="withdraw-btn" class="rounded-md border-2 border-stone-800 ml-8 text-slate-50 font-medium bg-purple-600 submit-btn " style="width: 100px;height: 50px;border: none;"> Withdraw </button>
+                   </div>
+                </div>
+            </div>
+               <script src="banking.js"></script>
+         </section>
+     </main>
+</body>
+</html>
